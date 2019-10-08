@@ -1,0 +1,124 @@
+@import '../../App.scss';
+
+
+.LandingPage {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  position: fixed;
+
+  .leftDiv {
+    width: 50%;
+    background-image: url('../../pics/me.jpg');
+    background-position: top center;
+    background-size: 200%;
+
+
+
+
+    .imageOverlay {
+      width: 100%;
+      background-image: linear-gradient(to bottom right, $headerColor, $primaryColor);
+      opacity: .4;
+      min-height: 100vh;
+    }
+  }
+
+  .rightDiv {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top right, $headerColor, $primaryColor);
+
+    .content {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+
+      .hello {
+        background-image: url('../../pics/me3.png');
+        background-repeat: no-repeat;
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+      }
+
+      .phone {
+        background-image: url('../../pics/phone.png');
+        background-repeat: no-repeat;
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+
+      }
+
+      .phone::before {
+
+        content: "Phone: 904-704-3965";
+      }
+
+      .email {
+        background-image: url('../../pics/email.png');
+        background-repeat: no-repeat;
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+      }
+
+
+
+
+
+      .title {
+
+        h1 {
+          font-family: $headerFont;
+          font-size: 40px;
+        }
+
+        h3 {
+          font-family: $headerFont;
+        }
+      }
+
+      .contact {
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+
+        i {
+          font-size: 30px;
+          color: $accentColor;
+        }
+
+        i:hover {
+          transform: scale(1.2);
+        }
+      }
+
+      .skills {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+
+        i {
+          font-size: 50px;
+          color: $accentColor;
+        }
+
+        i:hover {
+          transform: scale(1.4);
+        }
+      }
+
+      div {
+        width: 80%
+      }
+    }
+
+  }
+}
