@@ -5,13 +5,14 @@
   width: 100%;
   display: flex;
   min-height: 100vh;
-  position: fixed;
 
   .leftDiv {
     width: 50%;
     background-image: url('../../pics/me.jpg');
+    background-repeat: no-repeat;
     background-position: top center;
-    background-size: 200%;
+    background-size: cover;
+    position: fixed;
 
 
 
@@ -26,52 +27,22 @@
 
   .rightDiv {
     width: 50%;
+    margin-left: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
     background-image: linear-gradient(to top right, $headerColor, $primaryColor);
 
+
+
     .content {
-      width: 80%;
+      width: 100%;
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
       justify-content: center;
-
-      .hello {
-        background-image: url('../../pics/me3.png');
-        background-repeat: no-repeat;
-        width: 200px;
-        height: 200px;
-        background-size: cover;
-      }
-
-      .phone {
-        background-image: url('../../pics/phone.png');
-        background-repeat: no-repeat;
-        width: 200px;
-        height: 200px;
-        background-size: cover;
-
-      }
-
-      .phone::before {
-
-        content: "Phone: 904-704-3965";
-      }
-
-      .email {
-        background-image: url('../../pics/email.png');
-        background-repeat: no-repeat;
-        width: 200px;
-        height: 200px;
-        background-size: cover;
-      }
-
-
-
-
 
       .title {
 
@@ -82,6 +53,26 @@
 
         h3 {
           font-family: $headerFont;
+        }
+
+        .bitmoji {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            width: 50%;
+          }
+
+          a {
+            list-style: none;
+          }
+
+          h2 {
+            color: $accentColor;
+          }
         }
       }
 
@@ -111,7 +102,7 @@
         }
 
         i:hover {
-          transform: scale(1.4);
+          transform: scale(1.1);
         }
       }
 
