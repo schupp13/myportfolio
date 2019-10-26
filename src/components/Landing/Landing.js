@@ -1,9 +1,15 @@
 import React, { Component } from "react";
 import "./Landing.scss";
 import Projects from "../Projects/Projects";
+import Accomplish from "../Accomplish/Accomplish";
 import Me3 from "../../pics/me3.png";
 import phone from "../../pics/phone.png";
 import email from "../../pics/email.png";
+import grad from "../../pics/grad.png";
+import fscj from "../../pics/fscj.png";
+import dv from "../../pics/dv.png";
+import jaxcode from "../../pics/jaxcode.png";
+import resume from "../../pics/resume.pdf";
 
 export default class Landing extends Component {
   constructor() {
@@ -31,12 +37,12 @@ export default class Landing extends Component {
               <h3>Full Stack Web Developer</h3>
               {this.state.classContact === "hello" && (
                 <div className="bitmoji">
-                  <img src={Me3} />
+                  <img className="me" src={Me3} />
                 </div>
               )}
               {this.state.classContact === "phone" && (
                 <div className="bitmoji">
-                  <img src={phone} />
+                  <img className="me" src={phone} />
                   <a href="tel:19047043965">
                     <h2>904-704-3965</h2>
                   </a>
@@ -44,10 +50,43 @@ export default class Landing extends Component {
               )}
               {this.state.classContact === "email" && (
                 <div className="bitmoji">
-                  <img src={email} />
-                  <a href="mailto:webmaster@example.com">
+                  <img className="me" src={email} />
+                  <a href="mailto:schupp@protonmail.com">
                     <h2>schupp@protonmail.com</h2>
                   </a>
+                </div>
+              )}
+              {this.state.classContact === "fscj" && (
+                <div className="bitmoji">
+                  <img className="me" src={grad} />
+                  <img src={fscj} />
+                  <h2> Information Technology Management (B.A.S.) - 3.5 GPA</h2>
+                </div>
+              )}
+              {this.state.classContact === "boot" && (
+                <div className="bitmoji">
+                  <div>
+                    {" "}
+                    <img src={dv} />
+                    <p>13-week Full Stack (SERN Stack) </p>
+                    <div>
+                      <i class="fab fa-sass"></i>
+                      <i class="fab fa-react"></i>
+                      <i class="fab fa-node"></i>
+                      <i class="fas fa-database"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <img src={jaxcode} />
+                    <p>8-week PHP/Bootstrap</p>
+                    <div>
+                      <i class="fab fa-js-square"></i>
+                      <i class="fab fa-html5"></i>
+                      <i class="fab fa-php"></i>
+                      <i class="fab fa-bootstrap"></i>
+                      <i class="fas fa-database"></i>
+                    </div>
+                  </div>
                 </div>
               )}
             </div>
@@ -70,6 +109,17 @@ export default class Landing extends Component {
               >
                 <i class="fab fa-linkedin"></i>
               </a>
+              <i
+                className="fas fa-user-graduate"
+                onClick={() => this.phoneClass("fscj")}
+              ></i>
+              <i
+                class="fas fa-laptop-code"
+                onClick={() => this.phoneClass("boot")}
+              ></i>
+              <a href={resume} download>
+                <i class="fas fa-file"></i>
+              </a>
             </div>
             <div className="bio">
               <p>
@@ -81,6 +131,7 @@ export default class Landing extends Component {
                 Transitioning from a career in customer service/ sales.{" "}
               </p>
             </div>
+            <h4>Accomplishments</h4>
           </div>
 
           <Projects />

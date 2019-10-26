@@ -10,7 +10,7 @@
     width: 50%;
     background-image: url('../../pics/me.jpg');
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: center;
     background-size: cover;
     position: fixed;
 
@@ -44,6 +44,12 @@
       align-items: center;
       justify-content: center;
 
+      .bio {
+        font-family: $textFont;
+        font-size: 20px;
+        line-height: 25px;
+      }
+
       .title {
 
         h1 {
@@ -62,16 +68,24 @@
           justify-content: center;
           align-items: center;
 
+
+          .me {
+            width: 40%;
+          }
+
           img {
             width: 50%;
           }
 
           a {
             list-style: none;
+
+            color: $accentColor;
+
           }
 
           h2 {
-            color: $accentColor;
+            color: white;
           }
         }
       }
@@ -80,6 +94,10 @@
         width: 50%;
         display: flex;
         justify-content: space-evenly;
+
+        img {
+          width: 100%;
+        }
 
         i {
           font-size: 30px;
@@ -105,6 +123,7 @@
           transform: scale(1.1);
         }
       }
+
 
       div {
         width: 80%

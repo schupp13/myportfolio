@@ -1,0 +1,17 @@
+.accomplishments {
+  display: flex;
+  width: 80%;
+  .accomplishment{
+
+    .devmountain {
+      width: 20%;
+    }
+
+    .devmountain:hover {
+      transform: scale(1.2);
+    }
+  }
+
+
+
+}

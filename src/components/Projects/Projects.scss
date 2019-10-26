@@ -11,13 +11,13 @@
 
   .projectCard:hover {
     box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
-
+    transform: scale(1.02);
   }
 
   .projectCard {
     width: 80%;
     margin: 30px;
-    background-color: #F8F8F8;
+    background-color: $cardColor;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,9 +25,12 @@
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    background-image: linear-gradient(to bottom, $accentColor, white);
+    // background-image: linear-gradient(to bottom, $primaryColor, $secondaryColor, $accentColor, white);
 
-    .projectTitle {}
+    .projectTitle {
+      font-family: $headerFont;
+
+    }
 
     .projectImage {
       width: 80%;
@@ -35,6 +38,9 @@
 
     .projectDescription {
       width: 80%;
+      font-family: $textFont;
+      font-size: 14px;
+      line-height: 20px;
     }
 
     .lowerCard {
@@ -56,10 +62,6 @@
       }
 
 
-      img {
-        max-width: 100%;
-        max-height: 100%;
-      }
     }
   }
 }
