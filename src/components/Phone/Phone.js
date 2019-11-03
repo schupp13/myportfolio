@@ -6,8 +6,8 @@ export default function Phone() {
     <div className="showCard">
       <img className="bitMe" src={phone} />
 
-      <h2 className="showCardText">
-        <a href="tel:19047043965">904-704-3965</a>
+      <h2 className="">
+        <a href="tel:19047043965">(904) 704-3965</a>
       </h2>
     </div>
   );

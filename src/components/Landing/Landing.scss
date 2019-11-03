@@ -48,7 +48,7 @@
 
       .showCards {
         min-width: 100%;
-        min-height: 90vh;
+        min-height: 98vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -58,7 +58,8 @@
           flex-grow: 1;
           display: flex;
           flex-direction: column;
-          justify-content: center;
+          justify-content: flex-start;
+
 
         }
 
@@ -67,7 +68,7 @@
           width: 100%;
           display: flex;
           flex-direction: column;
-          justify-content: center;
+          justify-content: flex-end;
           align-items: center;
         }
 
@@ -77,7 +78,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 80%;
+        width: 100%;
       }
 
       .skills {
@@ -101,5 +102,69 @@
       }
     }
 
+  }
+}
+
+@media only screen and(max-width: 900px) {
+  .LandingPage {
+    flex-direction: column;
+
+    .leftDiv {
+      // display: none;
+      position: static;
+      width: 100%;
+      background-position: 75% 20%;
+      background-size: fill;
+      height: 15vh;
+
+      .imageOverlay {
+        display: none;
+      }
+
+    }
+
+
+    .rightDiv {
+      width: 100%;
+      margin: 0;
+
+
+
+      .content {
+        width: 90%;
+
+        .showCards {
+
+          height: 50vw;
+          justify-content: flex-start;
+
+          .top {
+            border: red 2px solid;
+            max-height: 20vh;
+            width: 100%;
+            font-size: 14px;
+
+            h1 {
+              font-size: 19px;
+            }
+
+            h3 {
+              font-size: 14px;
+            }
+
+          }
+
+          .bottom {
+            max-height: 60vh;
+
+          }
+        }
+
+        .projects {
+          width: 100%;
+
+        }
+      }
+    }
   }
 }

@@ -7,29 +7,45 @@
   align-items: center;
   justify-content: space-evenly;
   min-width: 100%;
-
-  animation: fadein 2s;
+  position: relative;
+  animation: fade-in 3s;
 
   .bitMe {
     width: 40%;
 
+
+
   }
-
-
 
   .showCardText {
     font-family: $textFont;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: bold;
+  }
 
+
+
+  h2 {
+    a {
+      text-decoration: none;
+      color: $accentColor;
+    }
+
+    a:hover {
+
+      color: white;
+    }
   }
 }
 
-@keyframes fadein {
+
+@keyframes fade-in {
   from {
-    opacity: 0;
+    left: 100%;
   }
 
   to {
-    opacity: 1;
-
+    left: 0;
   }
 }

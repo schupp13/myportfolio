@@ -5,7 +5,7 @@ export default function Phone() {
   return (
     <div className="showCard">
       <img className="bitMe" src={email} />
-      <h2 className="showCardText">
+      <h2 className="">
         <a href="mailto:schupp@protonmail.com">schupp@protonmail.com</a>
       </h2>
     </div>
