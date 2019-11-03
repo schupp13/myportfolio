@@ -1,0 +1,28 @@
+@import '../../App.scss';
+
+.header {
+  min-width: 100%;
+
+  h1 {
+    font-family: $headerFont;
+  }
+
+  h3 {
+    font-family: $headerFont;
+  }
+
+  .social {
+
+    display: flex;
+    justify-content: flex-start;
+
+    a {
+      margin-right: 30px;
+
+      i {
+        font-size: 40px;
+        color: $accentColor;
+      }
+    }
+  }
+}

@@ -1,9 +1,12 @@
 import React from "react";
+import Me3 from "../../pics/me3.png";
+import "./Bio.scss";
 
 export default function Bio() {
   return (
-    <div className="bio">
-      <p>
+    <div className="showCard">
+      <img className="bitMe" src={Me3} />
+      <p className="showCardText">
         Highly Driven and motivated to learn something new every day. Currently
         building projects with React, Node.js, PostgreSQL, and Express. Recently
         finished a bachelors in IT Management from Florida State College at

@@ -1,0 +1,31 @@
+@import '../Bio/Bio.scss';
+
+.showCard {
+  @extend .showCard;
+  min-width: 100%;
+
+
+  .card:hover {
+    transform: scale(1.1);
+  }
+
+  .card a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: $cardColor;
+    border-radius: 5px;
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+
+    img {
+      width: 50%;
+    }
+
+    p {
+      color: $accentColor;
+    }
+  }
+}

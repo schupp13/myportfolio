@@ -1,0 +1,14 @@
+@import '../../App.scss';
+
+.pernStack {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
+
+  i {
+    font-size: 30px;
+    height: auto;
+    color: $headerColor;
+  }
+}

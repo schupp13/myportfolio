@@ -1,0 +1,35 @@
+@import '../../App.scss';
+
+.showCard {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-evenly;
+  min-width: 100%;
+
+  animation: fadein 2s;
+
+  .bitMe {
+    width: 40%;
+
+  }
+
+
+
+  .showCardText {
+    font-family: $textFont;
+
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+
+  }
+}

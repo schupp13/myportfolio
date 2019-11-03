@@ -1,0 +1,10 @@
+@import '../Bio/Bio.scss';
+
+
+.showCard {
+  @extend .showCard;
+
+  .fscj {
+    width: 50%;
+  }
+}
