@@ -1,19 +1,48 @@
 import React from "react";
+// stacks
 import Pern from "../Pern/Pern";
 import Lamp from "../Lamp/Lamp";
-import NextRound from "../../pics/nextround.PNG";
+// project 1 - Nextround
+// import NextRound from "../../pics/nextround.PNG";
+import NextRound from "../../pics/nextround4.PNG";
+
+import nextroundMoji from "../../pics/beer.png";
+
+//project 2 - Keepit Reel
 import KeepitReel from "../../pics/keepitreel.PNG";
+import keepitreelMoji from "../../pics/movie.png";
+
+// support squad
 import SupportSqad from "../../pics/ticketManger.PNG";
+import suportSquadMoji from "../../pics/supportSquadMe.png";
+
+// Planets
 import Planets from "../../pics/planets.PNG";
+import PlanetsMoji from "../../pics/space.png";
+// College
 import College from "../../pics/college.PNG";
+import collegeMoji from "../../pics/books.png";
+
+// Random Quote
 import qutoes from "../../pics/quotes.PNG";
+import quotesMoji from "../../pics/quoteMe.png";
+
+// Pagination
 import pagination from "../../pics/pagination.PNG";
+import paginationMoji from "../../pics/paginationMe.png";
+
+//Event Regestration
+import Event from "../../pics/event.png";
+import eventMoji from "../../pics/eventMe.png";
+
 import Me4 from "../../pics/me4.png";
 
 export const projects = [
   {
     title: "NextRound",
-    img: NextRound,
+    mainImage: NextRound,
+    me: nextroundMoji,
+
     description:
       "Nextround - allows users to find drink specials according to their geographical position. It provides a business with the ability to quickly create attractive ads for users to see.",
     technology: <Pern />,
@@ -23,7 +52,8 @@ export const projects = [
   },
   {
     title: "Keep it Reel",
-    img: KeepitReel,
+    mainImage: KeepitReel,
+    me: keepitreelMoji,
     description:
       "Group Project - Worked in a team of four to develop a social media site centered around movies. Users can write their own blogs for any movie that is in the International Movie Database, like blogs , follow users, etc. Had a blast working on this project....great team.",
     technology: <Pern></Pern>,
@@ -33,7 +63,8 @@ export const projects = [
   },
   {
     title: "Support Squad",
-    img: SupportSqad,
+    mainImage: SupportSqad,
+    me: suportSquadMoji,
     description:
       "Simple ticket support system. Allows a team of CSR to create an issue ticket based on their list of customers.",
     technology: <Pern />,
@@ -43,7 +74,8 @@ export const projects = [
   },
   {
     title: "Planets",
-    img: Planets,
+    me: PlanetsMoji,
+    mainImage: Planets,
     description: "Information site about the planets in our solar system.",
     technology: <Lamp />,
     github: "https://github.com/schupp13/planets2/tree/master/planets",
@@ -53,7 +85,8 @@ export const projects = [
 
   {
     title: "Pseudo College",
-    img: College,
+    mainImage: College,
+    me: collegeMoji,
     description:
       "Allows students to login and sign up  or withdraw from courses. This project was an experiment to learn how session variables work in PHP . ",
     technology: <Lamp />,
@@ -62,8 +95,19 @@ export const projects = [
     tag: "college"
   },
   {
+    title: "Event Register",
+    mainImage: Event,
+    me: eventMoji,
+    description: "Easy web based tool to register guest for an event.",
+    technology: <Lamp />,
+    github: "https://github.com/schupp13",
+    site: "http://hello.schupp.webfactional.com/MyGuest",
+    tag: "event"
+  },
+  {
     title: "Random Quote",
-    img: qutoes,
+    me: quotesMoji,
+    mainImage: qutoes,
     description:
       "A simple vanilla js project. Display a random quote and a random background color when you press the 'Show another quote' button. Also, if you wait 10 secondes the event will trigger itself",
     technology: <Lamp />,
@@ -74,13 +118,14 @@ export const projects = [
   },
   {
     title: "Pagination Project",
-    img: pagination,
+    mainImage: pagination,
+    me: paginationMoji,
     description:
       " Taking a list of users and neatly breaking them up in a presentational manner (10 users per page).This is a vanilla JS project",
     technology: <div className="tech"></div>,
     github:
       "https://github.com/schupp13/random_quote_generator/blob/master/js/script.js",
-    site: "http://hello.schupp.webfactional.com/random-quote/",
+    site: "http://hello.schupp.webfactional.com/pagination/",
     tag: "pagination"
   }
 ];

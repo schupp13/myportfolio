@@ -1,0 +1,115 @@
+@import '../../App.scss';
+
+.projectPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to top right, $headerColor, $primaryColor);
+  min-height: 100vh;
+
+
+  button {
+    width: 100px;
+    height: 50px;
+    align-self: flex-start;
+    background-color: $primaryColor;
+    color: $accentColor;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    border-radius: 5px;
+
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+
+  .projectPageContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    animation: fadein 1s;
+    border-radius: 5px;
+    ;
+
+    .projectPageTitle {
+      font-size: 3em;
+    }
+
+    .projectPageDescription {
+      @include textBlock();
+      width: 50%;
+    }
+
+    .projectPageTechnology {}
+
+    .options {
+      width: 50%;
+      justify-content: space-evenly;
+      align-items: flex-end;
+      display: flex;
+
+      a {
+        text-decoration: none;
+      }
+
+      i {
+        font-size: 100px;
+        color: $accentColor;
+      }
+
+      .projectPageMoji {
+        width: 200px;
+        position: relative;
+        animation: slideup 3s;
+
+      }
+    }
+
+
+
+
+
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 3;
+
+      .projectPageImage {
+        width: 50%;
+      }
+
+
+    }
+
+    .projectPageOptions {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      .cardOption {}
+
+    }
+  }
+
+
+
+
+}
+
+@keyframes slideup {
+  from {
+    top: 200px;
+
+  }
+
+  to {
+    top: 0;
+  }
+}

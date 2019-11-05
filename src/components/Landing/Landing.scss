@@ -36,9 +36,6 @@
     background-image: linear-gradient(to top right, $headerColor, $primaryColor);
     min-height: 100vh;
 
-
-
-
     .content {
       width: 90%;
       display: flex;
@@ -132,14 +129,14 @@
 
       .content {
         width: 90%;
+        justify-content: flex-start;
 
         .showCards {
 
-          height: 50vw;
           justify-content: flex-start;
 
           .top {
-            border: red 2px solid;
+
             max-height: 20vh;
             width: 100%;
             font-size: 14px;
@@ -156,6 +153,7 @@
 
           .bottom {
             max-height: 60vh;
+            flex-direction: row;
 
           }
         }

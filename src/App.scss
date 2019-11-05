@@ -5,8 +5,18 @@ $headerColor: #0AC78B;
 
 
 
+
 $cardColor: rgb(213, 226, 225);
 $headerFont: 'Roboto Mono',
 monospace;
 $textFont: 'Montserrat',
 sans-serif;
+
+@mixin textBlock {
+  font-family: $textFont;
+  font-size: 18px;
+  letter-spacing: 1.4px;
+  line-height: 1.5;
+  color: $accentColor;
+
+}

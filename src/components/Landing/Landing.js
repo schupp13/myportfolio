@@ -12,7 +12,7 @@ export default class Landing extends Component {
         <DisplayProject
           tag={project.tag}
           title={project.title}
-          image={project.img}
+          image={project.mainImage}
           description={project.description}
           technology={project.technology}
         />

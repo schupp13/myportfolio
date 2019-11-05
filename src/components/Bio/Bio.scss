@@ -18,10 +18,7 @@
   }
 
   .showCardText {
-    font-family: $textFont;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
+    @include textBlock();
   }
 
 
@@ -49,3 +46,5 @@
     left: 0;
   }
 }
+
+@media only screen and(max-width: 900px) {}
